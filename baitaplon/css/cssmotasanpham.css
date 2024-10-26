@@ -294,7 +294,7 @@ em{
     margin-left: 6rem;
     cursor: pointer;
 }
-.danhsachsp+button{
+.danhsachsp+a>button{
     background-color: #ffffff;
     color: #ed3324;
     border-radius: 2rem;
@@ -305,7 +305,7 @@ em{
     border: 1px solid #ed3324;
     cursor: pointer;
 }
-.danhsachsp+button:hover{
+.danhsachsp+a>button:hover{
     background-color: #ed3324;
     color: #ffffff;
     transition: 0.5s;
