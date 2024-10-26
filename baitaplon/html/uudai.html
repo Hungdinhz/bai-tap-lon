@@ -4,110 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ưu Đãi Hấp Dẫn - Cửa Hàng ABC</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #333;
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-
-        .highlight {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        ul li {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section-title {
-            font-size: 1.5em;
-            color: #3498db;
-            margin-bottom: 10px;
-        }
-
-        .important-note {
-            background-color: #fce4ec;
-            padding: 15px;
-            border-left: 5px solid #e91e63;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        .cta {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-        }
-
-        .cta a:hover {
-            background-color: #2980b9;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: #fff;
-            font-size: 0.9em;
-            margin-top: 30px;
-        }
-
-        footer a {
-            color: #e74c3c;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/922d5b2c2f.js" crossorigin="anonymous"></script>
+    <script src="../js/header.js"></script>
+    <link rel="stylesheet" href="/css/header.css">
 </head>
 <body>
-    <iframe src="./header.html" width="100%" style="height: 110px;" frameborder="0"></iframe>
-    <div class="container">
+    <header class="header" >
+        <div class="top">
+            <div class="title">
+                <image src="/image/logo_mart.png" class="title__image"></image>
+            </div>
+            <div class="find">
+                <div class="find__input">
+                    <input type="text" name="input" placeholder="Tìm kiếm: ">
+                </div>
+                <button class="find__icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="navbar1">
+                <div class="navbar1__item">
+                     <a href="/html/giohang.html" class="navbar1__item--link">
+                        <i class="fa-solid fa-box-open"></i>
+                        <p>Giỏ hàng</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a href="/html/sing_in.html" class="navbar1__item--link" target="_blank">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <p>Đăng ký</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a href="/html/sing_in.html" class="navbar1__item--link" target="_blank">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Đăng nhập</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a class="navbar1__item--link"  id="notify">
+                        <i class="fa-solid fa-bell"></i>
+                        <p>Thông báo</p>
+                    </a>
+                    <div class="navbar1__item--notify">
+                        <h3>Thông tin mới nhất</h3>
+                        <ul class="notify__list">
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/image/deal3.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Ngày mai của ngày mai sẽ giảm giá 50% tất cả các mặt hàng</p>
+                                        <p>Ngày mai của ngày mai là ngày nào?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/image/keongot1.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Kẹo gừng giảm giá sốc</p>
+                                        <p>Kẹo gừng có mùi thơm, ăn rất ngon, tốt ch....</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/image/2025.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Nhận deal siêu đã</p>
+                                        <p>Đếm ngược đến ngày 01/01/2025 dể n....</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="notify__footer">
+                            <a href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <nav class="navbar2">
+            <ul class="navbar2__list">
+                <li class="navbar2__item"><a href="/index.html" class="navbar2__item--link">Trang chủ</a></li>
+                <li class="navbar2__item"><a href="/html/introducton.html" class="navbar2__item--link">Giới thiệu</a></li>
+                <li class="navbar2__item"><a href="/index.html" class="navbar2__item--link">Tin tức</a></li>
+                <li class="navbar2__item"><a href="/html/contact.html" class="navbar2__item--link">Hỗ trợ</a></li>
+                <li class="navbar2__item"><a href="/html/contact.html" class="navbar2__item--link">Liên hệ</a></li>
+            </ul>
+         </nav>
+    </header>
+    <div class="container" style="padding: 1rem;">
         <h1>Chương Trình Ưu Đãi Hấp Dẫn</h1>
         
         <div class="section">
@@ -148,9 +135,7 @@
             Lưu ý: Các chương trình ưu đãi có thể thay đổi theo thời gian và không được áp dụng đồng thời với các chương trình khuyến mãi khác. Vui lòng kiểm tra kỹ thông tin trước khi mua hàng.
         </div>
 
-        <div class="cta">
-            <a href="shop.html">Mua Sắm Ngay</a>
-        </div>
+        
     </div>
     <iframe src="./footer.html" width="100%" style="height: 250px;" frameborder="0"></iframe>
     

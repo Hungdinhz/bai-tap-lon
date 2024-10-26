@@ -1,3 +1,6 @@
+html{
+    font-size: 100%;
+}
 body{
     margin: 0 auto;
     background-color: #f8f8f8;
@@ -150,18 +153,18 @@ sup{
 }
 .motasanphamContainer__box2__buttom--soluong>input{
     border: none  ;
-    width: 1rem;
+    width: 4rem;
     text-align: center;
     font-size: 1rem;
     color: #495057;
     padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.7rem;
+    
+    padding-top: 0.8rem;
 }
 #soluong{
     outline: none;
 }
-.motasanphamContainer__box2__buttom--themvaogio>button{
+.motasanphamContainer__box2__buttom--themvaogio>a>button{
     font-size: 1rem;
     background-color:#ed3324;
     color: #ffffff;
@@ -172,12 +175,12 @@ sup{
     font-weight: bold;
     
 }
-.motasanphamContainer__box2__buttom--themvaogio>button:hover{
+.motasanphamContainer__box2__buttom--themvaogio>a>button:hover{
     cursor: pointer;
     background-color: rgba(255, 0, 0, 0.5);
     transition: 0.3s;
 }
-.motasanphamContainer__box2__buttom--mua>button{
+.motasanphamContainer__box2__buttom--mua>a>button{
     clear: both;
     cursor: pointer;
     font-size: 1rem;
@@ -192,7 +195,7 @@ sup{
     margin-left: +0rem;
     border: 1px solid #ed3324;
 }
-.motasanphamContainer__box2__buttom--mua>button:hover{
+.motasanphamContainer__box2__buttom--mua>A>button:hover{
     background-color: #ed3324;
     color: #ffffff;
     transition: 0.5s;
