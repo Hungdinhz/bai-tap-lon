@@ -3,7 +3,6 @@
     --black-text: #000;
     --font-text: #333;
 }
-
 /* Thuộc tính cho tất cả  */
 *{
     box-sizing: inherit;
@@ -37,11 +36,12 @@ main{
 
 /* Danh mục sản phẩm , mua hàng*/
 aside{
+    position: relative;
     width: 20%;
     border: 1px solid black;
     margin-right: 15px;
     float: left;
-    position: relative;
+   
 }
 
 .product__title{
@@ -79,7 +79,7 @@ aside{
     position: absolute;
     top: 0;
     left: 100%;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
@@ -224,7 +224,8 @@ section {
     border-radius: 50%;
     background-color: rgb(242, 222, 186);
     font-size: 1.6rem;
-    color: orange
+    color: orange;
+    cursor: pointer;
 }
 
 /* Xem tất cả */
@@ -439,6 +440,9 @@ section {
 #AT2 a{
     color: green;
 }
+#AT2 a:visited{
+    color: green;
+}
 
 #AT2 a:hover{
     background-color: rgb(197, 249, 232);
@@ -515,6 +519,9 @@ section {
 
 /* Xem tất cả 3 */
 #AT3 a{
+    color: gray;
+}
+#AT3 a:visited{
     color: gray;
 }
 
@@ -749,13 +756,16 @@ section {
 }
 
 /* xem tất cả bánh  */
+#AT1 a {
+    color: red;
+}
+#AT1 a:visited {
+    color: red;
+}
+
 #AT1 a:hover{
     background-color: red;
     color: var(--font-text);  
-}
-
-#AT1 a {
-    color: red;
 }
 
 /* Animaton đổi màu chữ */
@@ -790,12 +800,37 @@ section {
     margin-bottom: 10px;
 }
 
-/* Bánh */
+/* Gia vi */
 .box6 {
     border: 1px solid;
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
+}
+#AT4 a {
+    color: rgb(170, 237, 47);
+}
+#AT4 a:visited {
+    color: rgb(170, 237, 47);
+}
+
+#AT4 a:hover{
+    background-color: rgb(229, 251, 196);
+    color: var(--font-text);  
+}
+
+#notification {
+    width: 300px;
+    height: 80px;
+    border: 2px solid greenyellow;
+    position: fixed;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    color: green;
+    background-color: white;
+    border-radius: 10px ;
+    display: none;
 }
 
 

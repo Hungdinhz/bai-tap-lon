@@ -77,4 +77,19 @@ for(let i = 0; i < lengthProduct; i++){
     }
 }
 
+// delete gio hang
+
+
+const containerCart = document.querySelector('.cart__content');
+let itemCart = document.querySelectorAll('.cart__items');
+let deleteCart = document.querySelectorAll('.cart__delete');
+
+for(let i = 0; i < deleteCart.length; i++){
+    deleteCart[i].addEventListener('click', () =>{
+        containerCart.removeChild(itemCart[i]);
+        totalMoney -= tien[i] * qualityProduct[i].value;
+        total.textContent = totalMoney.toLocaleString('vi-VN');
+    });
+}
+
 
