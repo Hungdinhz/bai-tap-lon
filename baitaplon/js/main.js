@@ -85,26 +85,6 @@ selectBox5(select1, '.box5', 0);
 selectBox5(select2, '.box5', 1);
 selectBox5(select3, '.box5', 2);
 
-/*select1.addEventListener('click', () => {
-    document.querySelector('.box5 .active').classList.remove('active');
-    select1.classList.add('active');
-    listType.style.transform = `translateX(0%)`;
-   
-});
-
-select2.addEventListener('click', () => {
-    document.querySelector('.box5 .active').classList.remove('active');
-    select2.classList.add('active');
-    listType.style.transform = `translateX(-100%)`;
-
-});
-
-select3.addEventListener('click', () => {
-    document.querySelector('.box5 .active').classList.remove('active');
-    select3.classList.add('active');
-    listType.style.transform = `translateX(-200%)`;
-
-});*/
 
 const listTypeBox6 = document.querySelector('.box6 .Type');
 
@@ -123,28 +103,23 @@ const selectBox6 = function(event, name, number) {
 selectBox6(select1Box6, '.box6', 0);
 selectBox6(select2Box6, '.box6', 1);
 selectBox6(select3Box6, '.box6', 2);
-/*select1Box6.addEventListener('click', () => {
-    document.querySelector('.box6 .active').classList.remove('active');
-    select1Box6.classList.add('active');
-    listTypeBox6.style.transform = `translateX(0%)`;
-   
-});
 
-select2Box6.addEventListener('click', () => {
-    document.querySelector('.box6 .active').classList.remove('active');
-    select2Box6.classList.add('active');
-    listTypeBox6.style.transform = `translateX(-100%)`;
+let shopping = document.querySelectorAll('.shopping');
+console.log(shopping);
 
-});
-
-select3Box6.addEventListener('click', () => {
-    document.querySelector('.box6 .active').classList.remove('active');
-    select3Box6.classList.add('active');
-    listTypeBox6.style.transform = `translateX(-200%)`;
-
-});*/
+const lengthShopping = shopping.length;
 
 
+for(let i = 0; i < lengthShopping; i++){
+    shopping[i].addEventListener('click', () =>{
+        const notiShopping = document.getElementById('notification');
+        notiShopping.style = "display: block;";
+       
+        setTimeout(() =>{
+            notiShopping.style.display = "none";
+        }, 1000)
+    });
+}
 
 
 
