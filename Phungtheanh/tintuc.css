@@ -51,7 +51,11 @@ label {
 
 input[type="text"],
 input[type="email"] {
+<<<<<<< HEAD
     width: 200px;
+=======
+    min-width: 500px;
+>>>>>>> 6b7a93b04fe6107d5807a13f5b7b869c697ab7e5
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
