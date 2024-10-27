@@ -6,24 +6,17 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
 h1 {
     margin: 0;
     font-size: 2.5em;
 }
 
 section {
-    margin: 20px;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin: auto;
+    background-color: white;
 }
 
 h2 {
@@ -51,10 +44,12 @@ label {
 
 input[type="text"],
 input[type="email"] {
+    min-width: 500px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    
 }
 
 button {
@@ -86,12 +81,15 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
-div section{
-    display: flex;
-    justify-content: center;
-}
+
 .dangkinhanthongbao{
     margin-left: 30px;
+}
+
+/* Để nút bấm cũng có kích thước đẹp */
+button {
+    padding: 10px 20px; /* Thêm padding cho nút bấm */
+    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay */
 }
