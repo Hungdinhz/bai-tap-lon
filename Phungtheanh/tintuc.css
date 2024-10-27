@@ -51,11 +51,16 @@ label {
 
 input[type="text"],
 input[type="email"] {
+<<<<<<< HEAD
+    width: 200px;
+=======
     min-width: 500px;
+>>>>>>> 6b7a93b04fe6107d5807a13f5b7b869c697ab7e5
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    
 }
 
 button {
@@ -89,10 +94,13 @@ a {
 a:hover {
     text-decoration: underline;
 }
-div section{
-    display: flex;
-    justify-content: center;
-}
+
 .dangkinhanthongbao{
     margin-left: 30px;
+}
+
+/* Để nút bấm cũng có kích thước đẹp */
+button {
+    padding: 10px 20px; /* Thêm padding cho nút bấm */
+    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay */
 }
