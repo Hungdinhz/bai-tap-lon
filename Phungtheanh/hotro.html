@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hỗ trợ - Siêu thị ABC</title>
+    <link rel="stylesheet" href="/baitaplon/css/contact.css">
+    <script src="https://kit.fontawesome.com/922d5b2c2f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/baitaplon/css/header.css">
+    <link rel="stylesheet" href="/baitaplon/css/footer.css">
+    <script src="/baitaplon/js/header.js" defer></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgb(253, 229, 229);
         }
         .container {
-            width: 80%;
+            width: 100%;
             max-width: 800px;
             margin: 20px auto;
             background-color: #fff;
@@ -45,29 +50,211 @@
         .contact-info p {
             margin: 5px 0;
         }
+        .support-section {
+            background-color: #f9f9f9; /* Màu nền nhẹ cho phần hỗ trợ */
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng cho khối */
+        }
+
+        .support-section p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .support-section ul {
+            list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+            padding: 0;
+        }
+
+        .support-section li {
+            margin-bottom: 8px;
+        }
+
+        .support-section a {
+            text-decoration: none; /* Loại bỏ gạch chân */
+            color: #007bff; /* Màu xanh cho liên kết */
+            font-size: 14px;
+            transition: color 0.3s; /* Hiệu ứng chuyển màu khi di chuột */
+        }
+
+        .support-section a:hover {
+            color: #0056b3; /* Màu đậm hơn khi di chuột qua */
+        }
+        footer{
+            background-color: #fff;
+        }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Hỗ trợ khách hàng</h1>
-        
-        <div class="section">
-            <h2>Câu hỏi thường gặp</h2>
-            <p>1. <strong>Giờ mở cửa của siêu thị?</strong><br>
-            - Siêu thị mở cửa từ 8:00 sáng đến 10:00 tối, tất cả các ngày trong tuần.</p>
-            <p>2. <strong>Chính sách đổi trả hàng như thế nào?</strong><br>
-            - Khách hàng có thể đổi trả trong vòng 7 ngày với điều kiện hàng hóa còn nguyên vẹn và có hóa đơn mua hàng.</p>
-        </div>
-
-        <div class="section">
-            <h2>Liên hệ với chúng tôi</h2>
-            <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn. Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ:</p>
-            <div class="contact-info">
-                <p>📞 Điện thoại: 0123 456 789</p>
-                <p>✉️ Email: abc123@gmail.com</p>
-                <p>🏢 Địa chỉ: 3 Cầu Giấy TP Hà Nội</p>
+    <header class="header">
+        <div class="top">
+            <div class="title">
+                <image src="/baitaplon/image/logo.png" class="title__image"></image>
+            </div>
+            <div class="find">
+                <div class="find__input">
+                    <input type="text" name="input" placeholder="Tìm kiếm: ">
+                </div>
+                <button class="find__icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="navbar1">
+                <div class="navbar1__item">
+                    <a href="/baitaplon/html/giohang.html" class="navbar1__item--link">
+                        <i class="fa-solid fa-box-open"></i>
+                        <p>Giỏ hàng</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a href="/baitaplon/html/sing_in.html" class="navbar1__item--link" target="_blank">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <p>Đăng ký</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a href="/baitaplon/html/sing_in.html" class="navbar1__item--link" target="_blank">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Đăng nhập</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a class="navbar1__item--link"  id="notify">
+                        <i class="fa-solid fa-bell"></i>
+                        <p>Thông báo</p>
+                    </a>
+                    <div class="navbar1__item--notify">
+                        <h3>Thông tin mới nhất</h3>
+                        <ul class="notify__list">
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/baitaplon/image/deal3.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Ngày mai của ngày mai sẽ giảm giá 50% tất cả các mặt hàng</p>
+                                        <p>Ngày mai của ngày mai là ngày nào?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/baitaplon/image/keongot1.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Kẹo gừng giảm giá sốc</p>
+                                        <p>Kẹo gừng có mùi thơm, ăn rất ngon, tốt ch....</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/baitaplon/image/2025.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Nhận deal siêu đã</p>
+                                        <p>Đếm ngược đến ngày 01/01/2025 dể n....</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="notify__footer">
+                            <a href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</body>
+        <nav class="navbar2">
+            <ul class="navbar2__list">
+                <li class="navbar2__item"><a href="/baitaplon/index.html" class="navbar2__item--link">Trang chủ</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/html/introducton.html" class="navbar2__item--link">Giới thiệu</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/index.html" class="navbar2__item--link">Tin tức</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/html/contact.html" class="navbar2__item--link">Hỗ trợ</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/html/contact.html" class="navbar2__item--link">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container">
+            <h1>Hỗ trợ khách hàng</h1>
+            
+            <div class="section">
+                <h2>Câu hỏi thường gặp</h2>
+                <p>1. <strong>Giờ mở cửa của siêu thị?</strong><br>
+                - Siêu thị mở cửa từ 8:00 sáng đến 10:00 tối, tất cả các ngày trong tuần.</p>
+                <p>2. <strong>Chính sách đổi trả hàng như thế nào?</strong><br>
+                - Khách hàng có thể đổi trả trong vòng 7 ngày với điều kiện hàng hóa còn nguyên vẹn và có hóa đơn mua hàng.</p>
+            </div>
+
+            <div class="section">
+                <h2>Liên hệ với chúng tôi</h2>
+                <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn. Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ:</p>
+                <div class="support-section">
+                    <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn. Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ:</p>
+                    <ul>
+                        <li><a href="link_to_faq">Câu hỏi thường gặp</a></li>
+                        <li><a href="link_to_scam_warning">[Cảnh báo lừa đảo] Mua sắm an toàn cùng Shopee</a></li>
+                        <li><a href="link_to_return_refund_guide">[Trả hàng/Hoàn tiền] Hướng dẫn trả hàng sau khi yêu cầu Trả hàng/Hoàn tiền của bạn được chấp nhận</a></li>
+                        <li><a href="link_to_terms">Điều khoản Shopee</a></li>
+                        <li><a href="link_to_shopee_xu_info">[Shopee Xu] Shopee Xu là gì?</a></li>
+                        <li><a href="link_to_shipping_info">[Thông tin vận chuyển] Làm sao để liên hệ Đơn vị vận chuyển/tra cứu thông tin vận chuyển/hối giao hàng?</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <p>📞 Điện thoại: 0123 456 789</p>
+                    <p>✉️ Email: abc123@gmail.com</p>
+                    <p>🏢 Địa chỉ: 3 Cầu Giấy TP Hà Nội</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer__title">
+            <div class="title__icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>           
+            </div>
+            <div class="tilte__content">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Bạn muốn nhận khuyến mãi đặc biệt? Đăng kí ngay</p>
+            </div>
+            <div class="title__input">
+                <input type="email" id="footer__email" placeholder="Thả email nhận ưu đãi">
+                <div>Đăng kí</div>
+            </div>
+
+        </div>
+
+
+        <div class="support" id="support">
+            <div class="support1 information">
+                <p class="information__location"><b>Địa chỉ:</b> 3 Cầu Giấy TP Hà Nội</p>
+                <p class="information__tel"><b>Số diện thoại:</b> 19001786</p>
+                <p class="information__email"><b>Email:</b><small> abc123@gmail.com</small></p>
+            </div>
+            <div class="support1 customer">
+                <div>Hỗ trợ khách hàng</div>
+                <a href="">Về chúng tôi</a>
+                <a href="">Hệ thống cửa hàng</a>
+                <a href="">Gọi điện đặt hàng</a>
+                <a href="">Xuất hóa đơn điện tử</a>
+            </div>
+            <div class="support1 policy">
+                <div>Chính sách</div>
+                <a href="">Chính sách bán hàng</a>
+                <a href="">Chính sách đổi trả</a>
+                <a href="">Chính sách giao hàng</a>
+            </div>
+            <div class="support1 support__tel">
+                <div>Tổng đài hỗ trợ</div>
+                <p>Gọi mua hàng: <a href="">19008888</a></p>
+                <p>Gọi mua hàng: <a href="">19008888</a></p>
+                <p>Gọi mua hàng: <a href="">19008888</a></p>
+            </div>
+        </div>
+    </footer>
 </html>
