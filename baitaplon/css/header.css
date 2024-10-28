@@ -273,6 +273,7 @@ a {
 }
 .navbar2__item--link:visited{
     color: var(--white-text);
+    
 }
 
 @media only screen and (max-width: 600px){

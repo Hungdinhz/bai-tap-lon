@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
-  body {
+  main1 {
     display: flex;
     justify-content: center;
   }
@@ -35,7 +35,7 @@
   .category {
     font-size: 10px;
   }
-  .title {
+  .title1 {
     font-size: 12px;
     font-weight: bold;
   }
@@ -254,4 +254,10 @@
 .promotion-options label {
   display: block;
   margin-bottom: 5px;
+}
+footer{
+  margin-top: 100px;
+}
+a{
+  text-decoration: none;
 }
