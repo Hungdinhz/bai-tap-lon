@@ -116,7 +116,7 @@ aside{
 }
 .bonus__node--link {
     display: block;
-    
+    color: #333;
 }
 .bonus__node--link:visited {
     color: #333;
