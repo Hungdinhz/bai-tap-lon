@@ -4,19 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Táo Đỏ Mỹ</title>
-    <link rel="stylesheet" href="cssmotasanpham.css">
+    <link rel="stylesheet" href="/baitaplon/css/header.css">
+    <script src="/baitaplon/js/header.js" defer></script>
+    <link rel="stylesheet" href="/baitaplon/css/cssmotasanpham.css">
     <link rel="stylesheet" href="../fontawesome-free-6.6.0-web/css/all.css">
 </head>
 <body>
-    <iframe src="./header.html" width="100%" style="height: 110px;" frameborder="0"></iframe>
-    <ul class="backhome">
+    <header class="header">
+        <div class="top">
+            <div class="title">
+                <image src="/baitaplon/image/logo.png" class="title__image"></image>
+            </div>
+            <div class="find">
+                <div class="find__input">
+                    <input type="text" name="input" placeholder="Tìm kiếm: ">
+                </div>
+                <button class="find__icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="navbar1">
+                <div class="navbar1__item">
+                     <a href="/baitaplon/html/giohang.html" class="navbar1__item--link">
+                        <i class="fa-solid fa-box-open"></i>
+                        <p>Giỏ hàng</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a href="/baitaplon/html/sing_up.html" class="navbar1__item--link" target="_blank">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <p>Đăng ký</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a href="/baitaplon/html/sing_in.html" class="navbar1__item--link" target="_blank">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Đăng nhập</p>
+                    </a>
+                </div>
+                <div class="navbar1__item">
+                    <a class="navbar1__item--link"  id="notify">
+                        <i class="fa-solid fa-bell"></i>
+                        <p>Thông báo</p>
+                    </a>
+                    <div class="navbar1__item--notify">
+                        <h3>Thông tin mới nhất</h3>
+                        <ul class="notify__list">
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/baitaplon/image/deal3.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Ngày mai của ngày mai sẽ giảm giá 50% tất cả các mặt hàng</p>
+                                        <p>Ngày mai của ngày mai là ngày nào?</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/baitaplon/image/keongot1.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Kẹo gừng giảm giá sốc</p>
+                                        <p>Kẹo gừng có mùi thơm, ăn rất ngon, tốt ch....</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="notify__item">
+                                <a href="" class="notify__link">
+                                    <img src="/baitaplon/image/2025.jpg" alt="keongot">
+                                    <div class="notify__infor">
+                                        <p>Nhận deal siêu đã</p>
+                                        <p>Đếm ngược đến ngày 01/01/2025 dể n....</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="notify__footer">
+                            <a href="">Xem tất cả</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <nav class="navbar2">
+            <ul class="navbar2__list">
+                <li class="navbar2__item"><a href="/baitaplon/index.html" class="navbar2__item--link">Trang chủ</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/html/introducton.html" class="navbar2__item--link">Giới thiệu</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/index.html" class="navbar2__item--link">Tin tức</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/html/contact.html" class="navbar2__item--link">Hỗ trợ</a></li>
+                <li class="navbar2__item"><a href="/baitaplon/html/contact.html" class="navbar2__item--link">Liên hệ</a></li>
+            </ul>
+         </nav>
+    </header>      <ul class="backhome">
         <li><a href="" class="backhome__css">Trang chủ</a> / </li>       
         <li><a href="" class="backhome__css">Sản Phẩm Nổi Bật</a> / </li>
         <li>Táo Đỏ Mỹ</li>
     </ul>     
     <div class="motasanphamContainer">
         <div class="motasanphamContainer__box1">
-            <img src="../img/tao.jpg" alt="táo">
+            <img src="../image/tao.jpg" alt="táo">
             <p>Chia sẻ <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #0860f7;"></i></a> <a href="https://www.messenger.com/" target="_blank"><i class="fa-brands fa-facebook-messenger" style="color: #0860f7";></i></a> <a href="https://x.com" target="_blank"><i class="fa-brands fa-square-twitter" style="color: #4185fb;"></i></a></p>
         </div>
         <div class="motasanphamContainer__box2">
@@ -60,19 +145,19 @@
                 <div class="motasanphamContainer__box2__buttomtop">
                     <div class="motasanphamContainer__box2__buttom--soluong">
                         
-                            <button id="minos">-</button>
-                            <label for="soluong"></label>
-                            <input type="text" id="soluong" name="soluong" value="1">
-                            <button id="plos">+</button>
+                            
+                        <label for="soluong"></label>
+                        <input type="number" id="soluong" name="soluong" min="1" value="1">
+                        
 
-                    </div>
-                    <div class="motasanphamContainer__box2__buttom--themvaogio">
-                        <button>THÊM VÀO GIỎ</button>
-                    </div>
                 </div>
-                <div class="motasanphamContainer__box2__buttom--mua">
-                    <button>MUA NGAY</button>
+                <div class="motasanphamContainer__box2__buttom--themvaogio">
+                    <a href="./giohang.html"><button>THÊM VÀO GIỎ</button></a>
                 </div>
+            </div>
+            <div class="motasanphamContainer__box2__buttom--mua">
+                <a href="./giohang.html"><button>MUA NGAY</button></a>
+            </div>
             </div>
             <p>Gọi đặt mua <em id="motasanphamContainer__box2__phone">1800.0000</em> (7:30 - 22:00)</p>
             <div class="motasanphamContainer__box2__lastbox2">
@@ -91,7 +176,7 @@
                 <div class="danhsachsp__item">
                     <div class="danhsachsp-top">
                         <a href="./sanpham2.html" class="item__img">
-                            <img src="../img/bim_bim.jpg" alt="bim_bim">
+                            <img src="../image/bim_bim.jpg" alt="bim_bim">
                         </a>
                     </div>
                     <div class="danhsachsp-info">
@@ -106,7 +191,7 @@
                 <div class="danhsachsp__item">
                     <div class="danhsachsp-top">
                         <a href="./sanpham3.html" class="item__img">
-                            <img src="../img/dau_an.jpg" alt="dau_an">
+                            <img src="../image/dau_an.jpg" alt="dau_an">
                         </a>
                     </div>
                     <div class="danhsachsp-info">
@@ -121,7 +206,7 @@
                 <div class="danhsachsp__item">
                     <div class="danhsachsp-top">
                         <a href="./sanpham4.html" class="item__img">
-                            <img src="../img/xuc_xinh.jpg" alt="xuc_xich">
+                            <img src="../image/xuc_xinh.jpg" alt="xuc_xich">
                         </a>
                     </div>
                     <div class="danhsachsp-info">
@@ -136,7 +221,7 @@
                 <div class="danhsachsp__item">
                     <div class="danhsachsp-top">
                         <a href="./sanpham5.html" class="item__img">
-                            <img src="../img/tuong_ot_chinsu.jpg" alt="Tương Ớt">
+                            <img src="../image/tuong_ot_chinsu.jpg" alt="Tương Ớt">
                         </a>
                     </div>
                     <div class="danhsachsp-info">
@@ -162,7 +247,7 @@
                 Khoáng chất và chất xơ cũng là những thành phần quan trọng trong táo đỏ Mỹ, giúp hỗ trợ tiêu hóa, giảm nguy cơ bệnh tim mạch và đái tháo đường.<br><br>
                 táo đỏ Mỹ là một loại trái cây có nhiều lợi ích cho sức khỏe, đặc biệt là trong việc tăng cường sức khỏe tim mạch và miễn dịch, hỗ trợ tiêu hóa và giảm cân. Với những lợi ích này, táo đỏ Mỹ đang trở thành một lựa chọn phổ biến trong chế độ ăn uống lành mạnh của nhiều người. Bạn cũng có thể sử dụng tạo đỏ mỹ để làm các giỏ quà tặng trái cây để tặng người thân yêu<br><br>
             </p>
-            <img src="../img/tao2.jpg" alt="taodo">
+            <img src="../image/tao2.jpg" alt="taodo">
         </div>
         <div class="container3__sidebar">
             <div class="container3__sidebar-header">
@@ -171,7 +256,7 @@
             <div class="sidebar-baiviet">
                 <div class="baiviet">
                     <a href="">
-                        <img src="../img/thit_lon3.jpg" alt="" class="baiviet-img">
+                        <img src="../image/thit_lon3.jpg" alt="" class="baiviet-img">
                     </a>
                     <h3>
                         <a href="">Tổng hợp các món ngon với thịt nạc vai hấp dẫn</a>
@@ -179,7 +264,7 @@
                 </div>               
                 <div class="baiviet">
                     <a href="">
-                        <img src="../img/cai_ngot_xao.jpg" alt="" class="baiviet-img">
+                        <img src="../image/cai_ngot_xao.jpg" alt="" class="baiviet-img">
                     </a>
                     <h3>
                         <a href="">10 loại món ngon chế biến từ rau cải ngọt</a>
@@ -187,7 +272,7 @@
                 </div>
                 <div class="baiviet">
                     <a href="">
-                        <img src="../img/ga_sot_tuong_ot.jpg" alt="" class="baiviet-img">
+                        <img src="../image/ga_sot_tuong_ot.jpg" alt="" class="baiviet-img">
                     </a>
                     <h3>
                         <a href="">3 cách làm gà sốt tương ớt tại nhà</a>
@@ -214,7 +299,7 @@
             </div>
             
             <div class="card-bl">
-                <img src="../img/useravatar.jpg" alt="avartar">
+                <img src="../image/useravatar.jpg" alt="avartar">
                 <input type="text" placeholder="Bình luận..." id="kho">
             </div>
             
