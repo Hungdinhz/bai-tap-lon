@@ -116,7 +116,7 @@ aside{
 }
 .bonus__node--link {
     display: block;
-    
+    color: #333;
 }
 .bonus__node--link:visited {
     color: #333;
@@ -555,6 +555,8 @@ section {
     column-gap: 30px;
     row-gap: 10px;
     margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .news__image {
@@ -562,7 +564,7 @@ section {
 }
 .news {
     background-color: white;
-    width: 250px;
+    width: 230px;
     height: 300px;
     max-width: 45%;
     padding: 5px;
