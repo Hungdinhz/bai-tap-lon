@@ -262,3 +262,18 @@ footer{
 a{
   text-decoration: none;
 }
+ /* CSS cho thông báo */
+ .notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Hiệu ứng mờ dần */
+}
