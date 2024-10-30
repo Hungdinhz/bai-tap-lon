@@ -125,10 +125,10 @@ sup{
     padding: 5px;
     margin-right: 0.5rem;
 }
-.motasanphamContainer__box2__magiamgia--ma:hover{
+.motasanphamContainer__box2__magiamgia--ma.selected{
     background-color: #ed3324;
     color: white;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .motasanphamContainer__box2__buttomtop{
     display: flex;

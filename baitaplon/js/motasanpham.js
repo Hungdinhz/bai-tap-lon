@@ -32,3 +32,20 @@ document.querySelector("#giohang").addEventListener("click", function(event) {
     event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ <a>
     showSuccessMessage("Thêm thành công"); // Gọi hàm để hiển thị thông báo
 });
+
+// Lấy tất cả các mã giảm giá
+const discountCodes = document.querySelectorAll('.motasanphamContainer__box2__magiamgia--ma');
+
+// Lặp qua các mã và thêm sự kiện click
+discountCodes.forEach(code => {
+    code.addEventListener('click', function() {
+        // Nếu mã này đang được chọn, bỏ chọn tất cả mã
+        if (code.classList.contains('selected')) {
+            discountCodes.forEach(c => c.classList.remove('selected'));
+        } else {
+            // Bỏ chọn tất cả mã khác và chỉ chọn mã hiện tại
+            discountCodes.forEach(c => c.classList.remove('selected'));
+            code.classList.add('selected');
+        }
+    });
+});
