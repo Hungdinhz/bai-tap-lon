@@ -146,6 +146,7 @@ sup{
     margin-right: 1rem;
     flex: 20%;
     text-align: center;
+    
 }
 .motasanphamContainer__box2__buttom--themvaogio{
     flex:  80%;
@@ -156,7 +157,7 @@ sup{
     border: none  ;
     width: 4rem;
     text-align: center;
-    font-size: 1rem;
+    
     color: #495057;
     padding-left: 1rem;
     
