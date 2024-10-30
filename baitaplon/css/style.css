@@ -397,11 +397,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 5px;
+    row-gap: 15px;
+
 }
 .vegetable__list li {
     padding: 5px;
-    width: 33%;
+    width: 30%;
     min-width: 150px;
     border: 1px solid;
     border-radius: 10px;
@@ -431,8 +432,8 @@ section {
 .vegetable__link {
     margin-bottom: 10px;
 }
-.vegetable__list li a:hover img{
-    transform: translateY(-10px) scale(1.05);
+.vegetable__list li:hover {
+    transform: translateY(-5px) scale(1.05);
     transition: 0.25s;
 }
 
@@ -477,15 +478,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 5px;
+    row-gap: 15px;
 }
 .kitchenTool__list li {
     padding: 5px;
-    width: 33%;
+    width: 30%;
     min-width: 150px;
     border: 1px solid;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -512,8 +512,8 @@ section {
 .kitchenTool__link {
     margin-bottom: 10px;
 }
-.kitchenTool__list li a:hover img{
-    transform: translateY(-10px) scale(1.05);
+.kitchenTool__list li:hover{
+    transform: translateY(-5px) scale(1.05);
     transition: 0.25s;
 }
 
@@ -712,10 +712,9 @@ section {
     height: 200px;
 }
 
-.Type__name img:hover {
+.Type__name:hover {
     transform: translateY(-5px) scale(1.05);
     transition: 0.25s;
-
 }
 
 .Type {
