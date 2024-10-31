@@ -42,8 +42,10 @@ a {
     text-align: center;
 }
 .title__image{
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     border-radius: 50%;
+    object-fit: contain;
 }
 
 /* Tìm kiếm */
