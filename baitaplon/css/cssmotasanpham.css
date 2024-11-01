@@ -52,7 +52,7 @@ a{
     font-size: 2rem;
 }
 img{
-    width: 400px;
+    width: 350px;
 }
 .motasanphamContainer__box2{
     flex: 55%;
@@ -125,10 +125,10 @@ sup{
     padding: 5px;
     margin-right: 0.5rem;
 }
-.motasanphamContainer__box2__magiamgia--ma:hover{
+.motasanphamContainer__box2__magiamgia--ma.selected{
     background-color: #ed3324;
     color: white;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .motasanphamContainer__box2__buttomtop{
     display: flex;
@@ -146,6 +146,7 @@ sup{
     margin-right: 1rem;
     flex: 20%;
     text-align: center;
+    
 }
 .motasanphamContainer__box2__buttom--themvaogio{
     flex:  80%;
@@ -154,9 +155,9 @@ sup{
 
 .motasanphamContainer__box2__buttom--soluong>input{
     border: none  ;
-    width: 4rem;
+    width: 44px;
     text-align: center;
-    font-size: 1rem;
+    min-width:;
     color: #495057;
     padding-left: 1rem;
     
