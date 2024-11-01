@@ -155,9 +155,9 @@ sup{
 
 .motasanphamContainer__box2__buttom--soluong>input{
     border: none  ;
-    width: 4rem;
+    width: 44px;
     text-align: center;
-    
+    min-width:;
     color: #495057;
     padding-left: 1rem;
     
