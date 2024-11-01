@@ -327,7 +327,8 @@ section {
     border: 1px dashed black;
     background-color: white;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .ma {
@@ -342,6 +343,7 @@ section {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 .selection {
@@ -353,12 +355,14 @@ section {
 }
 
 .selection.ticket__node--copy {
+    padding: 2px;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
     background-color: rgb(235, 43, 43);
     color: var(--white-text);
     cursor: pointer;
+    
 }
 .selection.ticket__node--if {
     text-align: end;
@@ -744,6 +748,7 @@ section {
 .Type__name--link2 {
     display: block;
     margin-bottom: 5px;
+    color: var(--font-text);
 }
 
 .Type__name--link2:visited {
