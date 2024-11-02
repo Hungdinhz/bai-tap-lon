@@ -21,7 +21,7 @@
                 </div>
                 <div class="stat-card">
                     <h3>180</h3>
-                    <p>Tổng doanh thu</p>
+                    <p>Tổng doanh thu (triệu đồng)</p>
                 </div>
                 <div class="stat-card">
                     <h3>1538</h3>
@@ -75,7 +75,7 @@
             const pieChart = new Chart(pieCtx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Normal Room', 'Premium Room', 'VIP Room'],
+                    labels: ['Hàng đã bán (%)', 'Hàng hoàn lại (%)', 'Hàng tồn kho (%)'],
                     datasets: [{
                         data: [50, 30, 20],
                         backgroundColor: ['#36a2eb', '#ff6384', '#ffcd56'],
