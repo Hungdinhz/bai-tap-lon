@@ -1,2 +1,1 @@
-http://hungserver.wuaze.com/baitaplon/index.html?i=1
-bi loi dung bam vao:)
+https://hungdinhz.github.io/bai-tap-lon/baitaplon
