@@ -302,7 +302,7 @@ footer {
   display: flex; /* Sử dụng flexbox để căn giữa nội dung */
   align-items: center; /* Căn giữa theo chiều dọc */
   justify-content: center; /* Căn giữa theo chiều ngang */
-  width: 150px; /* Chiều rộng cố định */
+  width: 130px; /* Chiều rộng cố định */
   height: 50px; /* Chiều cao cố định */
   /* Màu nền cho nút */
   color: white; /* Màu chữ cho nút */
